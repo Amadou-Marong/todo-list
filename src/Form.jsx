@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { toast } from "react-toastify";
+import logo from "./assets/logo.jpg";
 
 const Form = ({ addTodo }) => {
     const [newItemName, setNewItemName] = useState('');
@@ -15,7 +16,8 @@ const Form = ({ addTodo }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-         <h4>Todos List</h4>
+        <h4>Todos List</h4>
+        <img src={logo} alt="logo" className="logo"/>
       <div className="form-control">
         <input
           type="text"

@@ -136,7 +136,8 @@ ul {
 .btn {
   cursor: pointer;
   color: var(--white);
-  background: var(--primary-500);
+  /* background: var(--primary-500); */
+  background: var(--green-dark);
   border: transparent;
   border-radius: var(--borderRadius);
   letter-spacing: var(--letterSpacing);
@@ -268,7 +269,12 @@ ul {
 .section-center:hover {
   box-shadow: var(--shadow-3);
 }
-
+.logo {
+  width: 140px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
 form h4 {
   text-align: center;
   margin-bottom: 1.5rem;
