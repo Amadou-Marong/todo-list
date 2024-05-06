@@ -7,7 +7,10 @@ const Form = ({ addTodo }) => {
     
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (!newItemName) return;
+        if (!newItemName) {
+          toast.error('Please provide an input')
+          return
+        }
         addTodo(newItemName);
         toast.success('New todo added');
         setNewItemName('');
